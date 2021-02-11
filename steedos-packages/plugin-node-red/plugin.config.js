@@ -47,7 +47,7 @@ exports.init = function (steedos) {
                 url: "/" // optional url to make the header text/image a link to this url
             },
             projects: {
-                enabled: true // Enable the projects feature
+                enabled: false // Enable the projects feature
             }
         }
     };
