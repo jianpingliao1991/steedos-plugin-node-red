@@ -13,6 +13,18 @@ exports.init = function (steedos) {
         httpNodeRoot: "/node-red/",
         userDir: path.join(process.cwd(), "node-red"),
         flowFile: path.join("flows.json"),
+        // storageModule : require("./MongoStorage"),
+        // storageModuleOptions: {        
+        //     mongoUrl: process.env.MONGO_URL,
+        //     //optional
+        //     //set the collection name that the module would be using
+        //     collectionNames:{
+        //         flows: "nodered_flows",
+        //         credentials: "nodered_credentials",
+        //         settings: "nodered_settings",
+        //         sessions: "nodered_sessions"
+        //     }
+        // },
         functionGlobalContext: {
             node_red: {
                 _id: 'default'
@@ -35,7 +47,7 @@ exports.init = function (steedos) {
                 url: "/" // optional url to make the header text/image a link to this url
             },
             projects: {
-                enabled: false // Enable the projects feature
+                enabled: true // Enable the projects feature
             }
         }
     };
