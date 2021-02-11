@@ -1,0 +1,13 @@
+{
+    "name": "@steedos/plugin-node-red",
+    "description": "Node-RED integration with Steedos Low-Code Development Platform. Triggers when a record is create, update, deleted, or custom event received.",
+    "version": "0.0.1",
+    "private": false,
+    "dependencies": {
+        "node-red": "^1.2.9",
+        "node-red-contrib-redis": "~1.3.7"
+    },
+    "main": "./plugin.config.js",
+    "author": "Jack Zhuang",
+    "license": "MIT"
+}

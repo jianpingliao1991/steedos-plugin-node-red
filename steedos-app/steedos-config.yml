@@ -31,4 +31,4 @@ tenant:
 plugins:
   - "@steedos/accounts"
   - "@steedos/metadata-api"
-  - "@steedos/node-red"
+  - "@steedos/plugin-node-red"

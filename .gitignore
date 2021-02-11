@@ -9,6 +9,7 @@
 **/lerna-debug.log
 
 **/lib
+**/*.backup
 
 .DS_Store
 
