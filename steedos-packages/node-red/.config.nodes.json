@@ -413,5 +413,20 @@
                 "file": "/Users/steedos/Documents/GitHub/steedos-plugin-node-red/node_modules/node-red-node-tail/28-tail.js"
             }
         }
+    },
+    "node-red-contrib-flow-manager": {
+        "name": "node-red-contrib-flow-manager",
+        "version": "0.7.2",
+        "local": false,
+        "nodes": {
+            "flow-manager": {
+                "name": "flow-manager",
+                "types": [],
+                "enabled": true,
+                "local": false,
+                "module": "node-red-contrib-flow-manager",
+                "file": "/Users/steedos/Documents/GitHub/steedos-plugin-node-red/node_modules/node-red-contrib-flow-manager/flow-manager.js"
+            }
+        }
     }
 }

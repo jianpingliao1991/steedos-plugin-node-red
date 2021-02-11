@@ -11,20 +11,8 @@ exports.init = function (steedos) {
         credentialSecret: "3b905ca2dbb6921f3c98a21eeb0e3ef1bWs",
         httpAdminRoot:"/node-red/admin/",
         httpNodeRoot: "/node-red/",
-        userDir: path.join(process.cwd(), "node-red"),
+        userDir: path.join(process.cwd(), "steedos-packages", "node-red"),
         flowFile: path.join("flows.json"),
-        // storageModule : require("./MongoStorage"),
-        // storageModuleOptions: {        
-        //     mongoUrl: process.env.MONGO_URL,
-        //     //optional
-        //     //set the collection name that the module would be using
-        //     collectionNames:{
-        //         flows: "nodered_flows",
-        //         credentials: "nodered_credentials",
-        //         settings: "nodered_settings",
-        //         sessions: "nodered_sessions"
-        //     }
-        // },
         functionGlobalContext: {
             node_red: {
                 _id: 'default'
