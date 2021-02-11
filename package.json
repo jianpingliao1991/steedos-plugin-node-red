@@ -2,5 +2,5 @@
     "name": "root",
     "version": "0.0.1",
     "private": true,
-    "workspaces": [".", "steedos-app", "steedos-packages/*"]
+    "workspaces": ["steedos-app", "steedos-packages/*"]
 }
