@@ -8,10 +8,10 @@ exports.init = function (steedos) {
     var app = steedos.app;
 
     var settings = {
-        // credentialSecret: "steedosCredentialSecret",
+        credentialSecret: "3b905ca2dbb6921f3c98a21eeb0e3ef1bWs",
         httpAdminRoot:"/flows/admin/",
         httpNodeRoot: "/flows/",
-        userDir: path.join(process.cwd()),
+        userDir: path.join(process.cwd(), "main", "default", "node-red"),
         flowFile: path.join("flows.json"),
         functionGlobalContext: {
             node_red: {
@@ -35,7 +35,7 @@ exports.init = function (steedos) {
                 url: "/" // optional url to make the header text/image a link to this url
             },
             projects: {
-                enabled: true // Enable the projects feature
+                enabled: false // Enable the projects feature
             }
         }
     };
