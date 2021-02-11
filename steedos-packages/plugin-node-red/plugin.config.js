@@ -1,16 +1,18 @@
 const express = require('express');
 const path = require('path');
 var RED = require("node-red");
+var objectql = require("@steedos/objectql");
 
 exports.init = function (steedos) {
 
     var server = WebApp.httpServer;
     var app = steedos.app;
-
+  
     var settings = {
+        _id: "node-red",
         credentialSecret: "3b905ca2dbb6921f3c98a21eeb0e3ef1bWs",
-        httpAdminRoot:"/node-red/admin/",
-        httpNodeRoot: "/node-red/",
+        httpAdminRoot:"/flows/admin/",
+        httpNodeRoot: "/",
         userDir: path.join(process.cwd(), "steedos-packages", "node-red"),
         flowFile: path.join("flows.json"),
         functionGlobalContext: {
@@ -39,6 +41,11 @@ exports.init = function (steedos) {
             }
         }
     };
+  
+    var steedosConfig = objectql.getSteedosConfig();
+    if (steedosConfig.node_red) {
+        settings = Object.assign(settings, steedosConfig.node_red);
+    }
 
     // Initialise the runtime with a server and settings
     RED.init(server,settings);
