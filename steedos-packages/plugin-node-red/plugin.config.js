@@ -9,9 +9,9 @@ exports.init = function (steedos) {
 
     var settings = {
         credentialSecret: "3b905ca2dbb6921f3c98a21eeb0e3ef1bWs",
-        httpAdminRoot:"/flows/admin/",
-        httpNodeRoot: "/flows/",
-        userDir: path.join(process.cwd(), "main", "default", "node-red"),
+        httpAdminRoot:"/node-red/admin/",
+        httpNodeRoot: "/node-red/",
+        userDir: path.join(process.cwd(), "node-red"),
         flowFile: path.join("flows.json"),
         functionGlobalContext: {
             node_red: {

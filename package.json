@@ -2,5 +2,27 @@
     "name": "root",
     "version": "0.0.1",
     "private": true,
-    "workspaces": ["steedos-app", "steedos-packages/*"]
+    "workspaces": ["steedos-app", "steedos-packages/*"],
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "@steedos/plugin-node-red": "0.0.1",
+        "@steedos/steedos-plugin-workflow": "^2.1.1",
+        "dotenv-flow": "^3.1.0",
+        "steedos-server": "^1.23.20"
+    },
+    "homepage": "https://www.steedos.com",
+    "resolutions": {
+        "**/lodash": "^4.17.15",
+        "**/handlebars": "^4.3.0",
+        "**/debug": "^3.1.0",
+        "**/hoek": "^5.0.3",
+        "**/cryptiles": "^4.1.2",
+        "**/bcrypt": "3.0.6",
+        "**/samlp": "3.4.1",
+        "**/xmldom": "0.2.1",
+        "**/tslib": "1.11.2",
+        "**/fibers": "^4.0.3"
+    }
 }
